@@ -1,0 +1,91 @@
+html, body {
+	background-color: white; 
+	height: 100%;
+	margin: 0;
+}
+
+#topnav {
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 5px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+li {
+	display: inline;
+}
+
+a:link, a:visited {
+	display: inline-block;
+	font-weight: bold;
+	color: black;
+	text-align: center;
+	padding: 100px;
+	text-decoration: none;
+	font-family: 'Coming Soon', cursive;
+	font-size: 30px;
+}
+
+a:hover, a:active { /*when you hover over the nav bar it will be underlined*/
+	text-decoration: underline;
+}
+
+#heading-text {
+    text-align: center;
+    font-family: 'Loved by the King';
+    color: black;
+    font-size: 30px;
+}
+
+#header-text { /*this is for the text that is on top of my header image*/
+	text-align: center;
+    position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family: "Cutive Mono";
+    min-width: 1000px;
+	font-size: 50px;
+}
+
+#header { /*this positions my header image*/
+	/*background-image: url('images/headerImage.jpg');*/ /*FIND ANOTHER IMAGE */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	min-width: 1000px;
+	height: 100%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+	}
+
+li {
+	display: inline;
+}
+
+#section { /*this is the section that aligns and centers my context*/
+    margin-left: 15%;
+    margin-right:15%;
+    width: 70%;
+    text-align: center;
+    min-width: 900px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.blog {
+   padding: 20px;
+   margin-top: 20px;
+   font-family: 'Coming Soon', cursive;
+   font-size: 20px;
+}
