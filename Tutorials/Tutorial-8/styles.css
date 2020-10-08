@@ -1,0 +1,171 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    margin-top: 5vw;
+    height: 94vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2vw;
+    color: #be6666;
+    padding: 5vh;
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #dda0dd;
+}
+
+#headerCont{
+    margin: 2vw;
+    
+}
+
+h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    margin: 1vw;
+    text-align: center;
+    padding: 2vw;
+
+}
+
+h3{
+    font-size: 2vw;
+}
+
+.block{
+    color: white;
+    background-color: grey;
+    align-items: center;
+    text-align: center;
+}
+
+#layoutOne{
+    display: grid;
+    grid-template-areas: 
+    'A B C'
+    'D E F';
+    gap: 2vw;
+    margin: 2vw;
+}
+
+
+@media only screen and (min-width: 900px){
+    
+    #layoutTwo{
+        display: grid;
+        grid-template-areas: 
+        'A A B B'
+        'A A C D'
+        'A A E F'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+
+    #layoutThree{
+        display: grid;
+        grid-template-areas: 
+        'A A B B'
+        'A A B B'
+        'C D E F'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+
+} 
+
+@media only screen and (min-width: 600px) and (max-width: 900px){
+    
+    #layoutTwo{
+        display: grid;
+        grid-template-areas: 
+        'A A B'
+        'A A C'
+        'D E F'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+
+    #layoutThree{
+        display: grid;
+        grid-template-areas: 
+        'A A B'
+        'A A C'
+        'D D E'
+        'D D F'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+
+} 
+
+@media only screen and (max-width: 600px){
+    
+    #layoutTwo{
+        display: grid;
+        grid-template-areas: 
+        'A B'
+        'C D'
+        'E F'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+
+    #layoutThree{
+        display: grid;
+        grid-template-areas:
+        'A'
+        'B'
+        'C'
+        'D'
+        'E'
+        'F'
+        ;
+        gap: 2vw;
+        margin: 2vw;
+    }
+
+} 
+
+.A{
+    grid-area: A;
+}
+
+.B{
+    grid-area: B;
+}
+
+.C{
+    grid-area: C;
+}
+
+.D{
+    grid-area: D;
+}
+
+.E{
+    grid-area: E;
+}
+
+.F{
+    grid-area: F;
+}

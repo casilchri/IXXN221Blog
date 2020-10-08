@@ -1,0 +1,84 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffd297;
+}
+
+.header{
+    max-width: 25em;
+    margin: 5em auto;
+    background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+    .content, .flash-cards, .table {
+        max-width: 1200px;
+        background-color: white;
+        padding: 20px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+/*----bigger screen----*/
+@media only screen and (min-width: 769px) {
+    .content, .flash-cards, .table {
+        max-width: 1200px;
+        background-color: #ffffff;
+        padding: 2em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.main-content p, .sidebar-1, .sidebar-2{
+    padding-right: 2em;
+}
+
+/*----coloured cards----*/
+.card{
+    padding: 3em;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+}
+
+.card-1{
+    background-color: #ffb6c1;
+}
+
+.card-2{
+    background-color: #32cd32;
+}
+
+.card-3{
+    background-color: #00ffff;
+}
+
+.table{
+    max-width: 60em;
+    background-color: #ffd297;
+    margin-bottom: 5em;
+}
+
+/*----bottom section----*/
+.main-page{
+    background-color: #71f3b6;
+    padding: 15px;
+}
+
+/*----botton thinner section----*/
+.section-1{
+    background-color: #87a6fa;
+}
+
+.section-2{
+    background-color: #6981c5;
+
+}
+
+.section-3{
+    background-color: #4a5b8b;
+}
